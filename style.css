@@ -11,7 +11,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 100svh;
   background-color: var(--primary-color);
   transition: background-color 2s ease-in-out 0.8s;
 }
