@@ -37,6 +37,7 @@ button {
   gap: 10px;
   position: absolute;
   bottom: 15%;
+  margin: 0 10px 0 10px;
 }
 .button {
   background-color: var(--primary-color);
