@@ -39,6 +39,7 @@ async function clicked() {
 
 // Get back to the previous activity
 let backClicked = "0"
+
 function getBack() {
   if (boredList.length > 1) {
     boredList.pop();
@@ -46,12 +47,18 @@ function getBack() {
     typeWriter(boredList[boredList.length - 1]);
   } else {
     backClicked ++;
-    if (backClicked === 5) {
+    if (backClicked == 5) {
       document.getElementById("random").innerHTML = "";
     document.body.className = "hirakoTime";
     document.documentElement.style.setProperty("--primary-color", "#ffb700");
     typeWriter("You activated the Sakashima Yokoshima Happo fusagari", 70);
     document.getElementById("music").play();
+    }
+    if (backClicked > 7) {
+      document.getElementById("random").innerHTML = "";
+      document.body.className = "";
+      typeWriter("Shhhh", 70);
+      backClicked = 0;
     }
   }
 }
