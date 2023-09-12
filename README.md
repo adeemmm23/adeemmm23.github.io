@@ -32,4 +32,4 @@ I wanted to add some code in markdown for so long 😎
 }
 ```
 
-Time to push this to GitHub 🤪
+Time to push this to GitHub
