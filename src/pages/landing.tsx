@@ -32,15 +32,20 @@ const Landing = () => {
 
 
     return (
-        <div className={`h-full w-full flex justify-center pt-40`} style={{backgroundColor : localColor!}}>
-            <div className={"flex flex-col items-center"}>
-            <p className={"max-w-3xl text-4xl md:text-6xl font-semibold font-Inter text-center"}>This Website is for the Redlab challenge , Come back soon for any <span className={"text-rose-500"}>Updates</span></p>
-            <p className={"text-xl font-normal text-center text-muted-foreground mt-4"}>Enzel 3al Button lin yekmel il site 👀</p>
-            <Button onClick={handleClick} disabled={count == 17} className={"text-sm w-fit mt-8"} size={"sm"} variant={"default"}>
-                Click me exactly 17 times
-            </Button>
-                <p className={"text-sm select-none font-semibold text-neutral-600 mt-2 text-center"}>You clicked <span className={"text-blue-500"}>{count}</span> times</p>
+
+        <div className={`h-full flex justify-center items-center w-full text-white bg-gradient-to-b from-[#1e1e20] to-[#0e0e11] relative font-Inter `} style={{/*backgroundColor : localColor!*/}}>
+            <div className={"h-full w-full opacity-100 overflow-clip bg-stars absolute "}/>
+            <div className={"relative"}>
+                <div className={"flex flex-col items-center"}>
+                    <p className={"max-w-3xl text-4xl md:text-6xl font-semibold text-center"}>Si vous voulez voir de la <span className={"bg-clip-text bg-gradient-to-t from-purple-600 to-pink-400 text-transparent"}>magie</span>, appuyez 17 fois sur ce bouton.</p>
+                    <p className={"text-xl font-normal text-center text-muted-foreground mt-4"}>chaque clic est une aventure 🤯</p>
+                    <Button onClick={handleClick} disabled={count == 17} className={"text-sm mt-8 rounded-full font-semibold"} size={"lg"} variant={"transparent"} >
+                        Cliquez-moi <span className={"ml-3"}>🪄</span>
+                    </Button>
+                    {/*<p className={"text-sm select-none font-semibold text-neutral-600 mt-2 text-center"}>You clicked <span className={"text-blue-500"}>{count}</span> times</p>*/}
+                </div>
             </div>
+
         </div>
     );
 };
