@@ -42,7 +42,7 @@ const Landing = () => {
                     <Button onClick={handleClick} disabled={count == 17} className={"text-sm mt-8 rounded-full font-semibold"} size={"lg"} variant={"transparent"} >
                         Cliquez-moi <span className={"ml-3"}>🪄</span>
                     </Button>
-                    {/*<p className={"text-sm select-none font-semibold text-neutral-600 mt-2 text-center"}>You clicked <span className={"text-blue-500"}>{count}</span> times</p>*/}
+                    <p className={"text-sm select-none font-semibold text-neutral-600 mt-2 text-center"}>vous avez cliqué <span className={"text-blue-500"}>{count}</span> fois</p>
                 </div>
             </div>
 
