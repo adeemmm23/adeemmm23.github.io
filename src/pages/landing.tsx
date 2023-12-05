@@ -40,7 +40,7 @@ const Landing = () => {
                 <div className={"flex flex-col items-center"}>
                     <p  ref={scope} className={"max-w-3xl text-4xl md:text-6xl font-semibold text-center"}>Si vous voulez voir de la <span className={"bg-clip-text bg-gradient-to-t from-purple-600 to-pink-400 text-transparent"}>magie</span>, appuyez 17 fois sur ce bouton.</p>
                     <p className={"text-xl font-normal text-center text-muted-foreground mt-4"}>chaque clic est une aventure 🤯</p>
-                    <Button onClick={handleClick} disabled={count == 17} className={"text-sm mt-8 rounded-full font-semibold"} size={"lg"} variant={"nuit22"} >
+                    <Button onClick={handleClick} disabled={count == 17} className={"text-sm mt-8 rounded-full font-semibold"} size={"lg"} variant={"transparent"} >
                         Cliquez-moi <span className={"ml-3"}>🪄</span>
                     </Button>
                     <p className={"text-sm select-none font-semibold text-neutral-600 mt-2 text-center"}>vous avez cliqué <span className={"text-blue-500"}>{count}</span> fois</p>
