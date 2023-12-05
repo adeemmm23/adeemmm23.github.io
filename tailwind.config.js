@@ -20,6 +20,7 @@ module.exports = {
         'Inter': ['Inter' , 'sans-serif'],
         'Montserrat': ['Montserrat' , 'sans-serif'],
       },
+
       backgroundImage: {
         'stars' : ('url(/src/assets/stars.svg)'),
       },
