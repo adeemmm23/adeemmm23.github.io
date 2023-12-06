@@ -5,8 +5,9 @@ import { cn } from "@/lib/utils"
 import {buttonVariants} from "@/components/ui/button.tsx";
 import SignInForm from "@/pages/signIn/sign-in-form.tsx";
 import {ModeToggle} from "@/components/mode-toggle.tsx";
+import SignUpForm from "@/pages/signUp/sign-up-form.tsx";
 
-export default function SignInPage() {
+export default function SignUpPage() {
     return (
         <>
             <div className="container relative h-full flex-col items-center justify-center md:grid lg:max-w-none lg:grid-cols-2 lg:px-0 font-Inter">
@@ -29,12 +30,12 @@ export default function SignInPage() {
                     <nav className={" mt-10 flex  justify-between"}>
                         <ModeToggle/>
                         <Link
-                            to={"/sign-up"}
+                            to={"/sign-in"}
                             className={cn(
                                 buttonVariants({ variant: "ghost" }),
                             )}
                         >
-                            S'inscrire
+                            Se connecter
                         </Link>
 
                     </nav>
@@ -42,13 +43,13 @@ export default function SignInPage() {
 
                         <div className="flex flex-col space-y-2 text-center">
                             <h1 className="text-2xl font-semibold tracking-tight">
-                                Se connecter
+                                S'inscrire
                             </h1>
                             <p className="text-sm text-muted-foreground">
-                                Saisissez votre email ci-dessous pour se connecter
+                                Saisissez votre cordonnées pour créer un compte.
                             </p>
                         </div>
-                        <SignInForm />
+                        <SignUpForm />
                         <p className="px-8 text-center text-sm text-muted-foreground">
                             En cliquant sur continuer, vous acceptez nos{" "}
                             <Link

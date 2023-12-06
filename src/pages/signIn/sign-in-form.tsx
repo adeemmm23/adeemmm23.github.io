@@ -1,14 +1,21 @@
-import React from 'react';
+import React, {useEffect,useState} from 'react';
 import {cn} from "@/lib/utils.ts";
 import {Label} from "@/components/ui/label.tsx";
 import {Input} from "@/components/ui/input.tsx";
 import {Button} from "@/components/ui/button.tsx";
 import {Loader2, Github} from "lucide-react";
+import { useTheme } from "@/components/theme-provider"
 
+
+type ButtonVariant = "default" | "link" | "transparent" | "transparentDark" | "destructive" | "outline" | "secondary" | "ghost" | null | undefined;
 
 interface SignInProps extends React.HTMLAttributes<HTMLDivElement> {}
 const SignInForm = ({className , ...props} : SignInProps) => {
-    const [isLoading, setIsLoading] = React.useState<boolean>(false)
+    const { theme } = useTheme();
+    const [isLoading, setIsLoading] =useState<boolean>(false);
+    const [buttonVariant, setButtonVariant] =useState<ButtonVariant>("default");
+
+
 
     async function onSubmit(event: React.SyntheticEvent) {
         event.preventDefault()
@@ -18,17 +25,23 @@ const SignInForm = ({className , ...props} : SignInProps) => {
             setIsLoading(false)
         }, 3000)
     }
+
+    useEffect(() => {
+        theme == "dark"? setButtonVariant("transparent") : setButtonVariant("transparentDark");
+    }, [theme]);
+
+
     return (
         <div className={cn("grid gap-6", className)} {...props}>
             <form onSubmit={onSubmit}>
-                <div className="grid gap-2">
+                <div className="grid gap-3">
                     <div className="grid gap-1">
                         <Label className="sr-only" htmlFor="email">
-                            Email
+                            E-mail
                         </Label>
                         <Input
                             id="email"
-                            placeholder="name@example.com"
+                            placeholder="nom@example.com"
                             type="email"
                             autoCapitalize="none"
                             autoComplete="email"
@@ -37,11 +50,25 @@ const SignInForm = ({className , ...props} : SignInProps) => {
                             className={"rounded-full"}
                         />
                     </div>
-                    <Button variant={"transparentDark"} className={"rounded-full"}   disabled={isLoading}>
+                    <div className="grid gap-1">
+                        <Label className="sr-only" htmlFor="Password">
+                            Mot de passe
+                        </Label>
+                        <Input
+                            id="Password"
+                            type="Password"
+                            placeholder={"mot de passe"}
+                            autoCapitalize="none"
+                            autoCorrect="off"
+                            disabled={isLoading}
+                            className={"rounded-full"}
+                        />
+                    </div>
+                    <Button variant={buttonVariant} className={"rounded-full"}   disabled={isLoading}>
                         {isLoading && (
                             <Loader2 className="mr-2 h-4 w-4 animate-spin" />
                         )}
-                        Sign In with Email
+                        S'identifier par courriel
                     </Button>
                 </div>
             </form>
@@ -51,7 +78,7 @@ const SignInForm = ({className , ...props} : SignInProps) => {
                 </div>
                 <div className="relative flex justify-center text-xs uppercase">
           <span className="bg-background px-2 text-muted-foreground">
-            Or continue with
+            Ou continuer avec
           </span>
                 </div>
             </div>
