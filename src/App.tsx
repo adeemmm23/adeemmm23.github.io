@@ -3,12 +3,14 @@ import SignInPage from "@/pages/signIn/sign-in-page.tsx";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { ThemeProvider } from "@/components/theme-provider";
 import SignUpPage from "@/pages/signUp/sign-up-page.tsx";
+import { Toaster } from 'sonner'
 import Dashboard from "@/pages/dashboard/dashboard.tsx";
 
 function App() {
   return (
     <>
         <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
+            <Toaster />
             <main className={"h-screen"}>
                 <BrowserRouter>
                     <Routes>
