@@ -25,7 +25,7 @@ const Landing = () => {
 
             <div className={`h-full flex justify-center items-center w-full `}>
                 <div className={"relative"}>
-                    <div className={"flex flex-col items-center"}>
+                    <div className={"flex flex-col items-center md:p-0 p-8"}>
                         <p className={"max-w-4xl text-4xl md:text-6xl font-semibold text-center"}>Si vous voulez voir de la <span className={"bg-clip-text bg-gradient-to-t from-purple-600 to-pink-400 text-transparent"}>magie</span>, veuillez vous connecter ou créer un compte</p>
                         <p className={"text-xl font-normal text-center text-muted-foreground mt-4"}>Soyez prêts pour l'aventure 🤯</p>
                         <div className={'grid grid-cols-2 gap-x-4 mt-8'}>
