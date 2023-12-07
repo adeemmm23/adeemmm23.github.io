@@ -3,6 +3,7 @@ import SignInPage from "@/pages/signIn/sign-in-page.tsx";
 import {BrowserRouter, Route, Routes} from "react-router-dom";
 import { ThemeProvider } from "@/components/theme-provider"
 import SignUpPage from "@/pages/signUp/sign-up-page.tsx";
+import Dashboard from "@/pages/dashboard/dashboard.tsx";
 
 function App() {
 
@@ -15,6 +16,7 @@ function App() {
                         <Route path={"/"} Component={Landing} />
                         <Route path={"/sign-in"} Component={SignInPage} />
                         <Route path={"/sign-up"} Component={SignUpPage} />
+                        <Route path={"/dashboard"} Component={Dashboard} />
                     </Routes>
                 </BrowserRouter>
             </main>
