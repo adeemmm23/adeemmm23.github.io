@@ -1,12 +1,11 @@
 import Landing from "@/pages/landing.tsx";
 import SignInPage from "@/pages/signIn/sign-in-page.tsx";
-import {BrowserRouter, Route, Routes} from "react-router-dom";
-import { ThemeProvider } from "@/components/theme-provider"
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { ThemeProvider } from "@/components/theme-provider";
 import SignUpPage from "@/pages/signUp/sign-up-page.tsx";
 import Dashboard from "@/pages/dashboard/dashboard.tsx";
 
 function App() {
-
   return (
     <>
         <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
@@ -22,7 +21,7 @@ function App() {
             </main>
         </ThemeProvider>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
