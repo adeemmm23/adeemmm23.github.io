@@ -6,22 +6,22 @@ import { UserNav } from "./components/user-nav";
 import { taskSchema } from "./data/schema";
 import tasksData from "./data/tasks.json";
 
-import Nuit2023 from "@/assets/logo/nuit_2023.svg";
-import Nuit2022 from "@/assets/logo/nuit_2022.svg";
-import Nuit2021 from "@/assets/logo/nuit_2021.svg";
-import Nuit2019 from "@/assets/logo/nuit_2019.svg";
-import Nuit2018 from "@/assets/logo/nuit_2018.svg";
-import Nuit2017 from "@/assets/logo/nuit_2017.svg";
-import Nuit2016 from "@/assets/logo/nuit_2016.svg";
-import Nuit2015 from "@/assets/logo/nuit_2015.svg";
-import Nuit2014 from "@/assets/logo/nuit_2014.svg";
-import Nuit2013 from "@/assets/logo/nuit_2013.svg";
-import Nuit2012 from "@/assets/logo/nuit_2012.svg";
-import Nuit2011 from "@/assets/logo/nuit_2011.svg";
-import Nuit2010 from "@/assets/logo/nuit_2010.svg";
-import Nuit2009 from "@/assets/logo/nuit_2009.svg";
-import Nuit2008 from "@/assets/logo/nuit_2008.svg";
-import Nuit2007 from "@/assets/logo/nuit_2007.svg";
+import Nuit2023 from "../../../public/logo/nuit_2023.svg";
+import Nuit2022 from "../../../public/logo/nuit_2022.svg";
+import Nuit2021 from "../../../public/logo/nuit_2021.svg";
+import Nuit2019 from "../../../public/logo/nuit_2019.svg";
+import Nuit2018 from "../../../public/logo/nuit_2018.svg";
+import Nuit2017 from "../../../public/logo/nuit_2017.svg";
+import Nuit2016 from "../../../public/logo/nuit_2016.svg";
+import Nuit2015 from "../../../public/logo/nuit_2015.svg";
+import Nuit2014 from "../../../public/logo/nuit_2014.svg";
+import Nuit2013 from "../../../public/logo/nuit_2013.svg";
+import Nuit2012 from "../../../public/logo/nuit_2012.svg";
+import Nuit2011 from "../../../public/logo/nuit_2011.svg";
+import Nuit2010 from "../../../public/logo/nuit_2010.svg";
+import Nuit2009 from "../../../public/logo/nuit_2009.svg";
+import Nuit2008 from "../../../public/logo/nuit_2008.svg";
+import Nuit2007 from "../../../public/logo/nuit_2007.svg";
 
 type Task = {
   id: string;
