@@ -2,11 +2,11 @@
 module.exports = {
   darkMode: ["class"],
   content: [
-    './pages/**/*.{ts,tsx}',
-    './components/**/*.{ts,tsx}',
-    './app/**/*.{ts,tsx}',
-    './src/**/*.{ts,tsx}',
-	],
+    "./pages/**/*.{ts,tsx}",
+    "./components/**/*.{ts,tsx}",
+    "./app/**/*.{ts,tsx}",
+    "./src/**/*.{ts,tsx}",
+  ],
   theme: {
     container: {
       center: true,
@@ -17,12 +17,13 @@ module.exports = {
     },
     extend: {
       fontFamily: {
-        'Inter': ['Inter' , 'sans-serif'],
-        'Montserrat': ['Montserrat' , 'sans-serif'],
+        Inter: ["Inter", "sans-serif"],
+        Montserrat: ["Montserrat", "sans-serif"],
+        Pixel: ["Pixelify Sans", "sans-serif"],
       },
 
       backgroundImage: {
-        'stars' : ('url(/src/assets/stars.svg)'),
+        stars: "url(/src/assets/stars.svg)",
       },
       colors: {
         border: "hsl(var(--border))",
@@ -81,4 +82,4 @@ module.exports = {
     },
   },
   plugins: [require("tailwindcss-animate")],
-}
+};
