@@ -22,6 +22,20 @@ const buttonVariants = cva(
           "bg-white bg-opacity-10 text-white duration-300 hover:ring-white/30 hover:ring-1 transition-all ",
         transparentDark:
           "bg-black bg-opacity-10 text-black duration-300 hover:ring-black/30 hover:ring-1 transition-all ",
+        nuit2007:
+          "bg-red-500 hover:bg-red-600 border border-red-600 border-dashed",
+        nuit2008:
+          "bg-gradient-to-r from-green-500 to-green-700 ring-1 ring-green-600 hover:ring-green-500 transition-all duration-300",
+        nuit2009: "bg-amber-500 hover:bg-amber-600 ring-1 ring-amber-600",
+        nuit2010:
+          "relative bg-gradient-to-r from-pink-500 to-blue-700 hover:from-pink-600 hover:to-blue-800 before:content-['🚗'] before:absolute before:-right-5 overflow-hidden hover:before:right-full before:transition-all before:duration-150 before:text-xl",
+        nuit2011:
+          "bg-green-500 ring-1 ring-red-600 text-amber-400 hover:bg-amber-500 hover:ring-amber-600 tranistion-all duration-300 before:content-['🎁'] relative before:absolute before:-bottom-5 overflow-hidden before:transition-all before:duration-300 hover:before:bottom-2 hover:before:text-lg",
+        nuit2012:
+          "relative bg-amber-500 before:content-['☁️'] before:absolute before:-top-2 before:-left-5 before:text-2xl ring-1 ring-amber-600 hover:bg-amber-600 hover:ring-amber-500 after:content-['☁️'] after:absolute after:text-2xl after:-right-4 after:-bottom-1",
+        nuit2013:
+          "bg-gradient-to-b from-blue-300 to-blue-700 rounded-full via-blue-950 overflow-hidden hover:from-blue-400",
+        nuit2014: "bg-teal-400 hover:bg-teal-500 ring-1 ring-teal-600",
         nuit2015:
           "relative before:content-['🍵'] before:absolute before:top-0 before:-translate-y-6 before:text-2xl ring-1 ring-amber-600 hover:bg-amber-900 hover:ring-amber-500",
         nuit2016:

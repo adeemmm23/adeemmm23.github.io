@@ -9,12 +9,19 @@ import tasksData from "./data/tasks.json";
 import Nuit2023 from "@/assets/logo/nuit_2023.svg";
 import Nuit2022 from "@/assets/logo/nuit_2022.svg";
 import Nuit2021 from "@/assets/logo/nuit_2021.svg";
-import Nuit2020 from "@/assets/logo/nuit_2020.svg";
 import Nuit2019 from "@/assets/logo/nuit_2019.svg";
 import Nuit2018 from "@/assets/logo/nuit_2018.svg";
 import Nuit2017 from "@/assets/logo/nuit_2017.svg";
 import Nuit2016 from "@/assets/logo/nuit_2016.svg";
 import Nuit2015 from "@/assets/logo/nuit_2015.svg";
+import Nuit2014 from "@/assets/logo/nuit_2014.svg";
+import Nuit2013 from "@/assets/logo/nuit_2013.svg";
+import Nuit2012 from "@/assets/logo/nuit_2012.svg";
+import Nuit2011 from "@/assets/logo/nuit_2011.svg";
+import Nuit2010 from "@/assets/logo/nuit_2010.svg";
+import Nuit2009 from "@/assets/logo/nuit_2009.svg";
+import Nuit2008 from "@/assets/logo/nuit_2008.svg";
+import Nuit2007 from "@/assets/logo/nuit_2007.svg";
 
 type Task = {
   id: string;
@@ -27,12 +34,19 @@ type Task = {
 export let theme = "nuit2022";
 
 const themes = [
+  "nuit2007",
+  "nuit2008",
+  "nuit2009",
+  "nuit2010",
+  "nuit2011",
+  "nuit2012",
+  "nuit2013",
+  "nuit2014",
   "nuit2015",
   "nuit2016",
   "nuit2017",
   "nuit2018",
   "nuit2019",
-  "nuit2020",
   "nuit2021",
   "nuit2022",
   "nuit2023",
@@ -45,12 +59,19 @@ const logo: Logo = {
   nuit2023: Nuit2023,
   nuit2022: Nuit2022,
   nuit2021: Nuit2021,
-  nuit2020: Nuit2020,
   nuit2019: Nuit2019,
   nuit2018: Nuit2018,
   nuit2017: Nuit2017,
   nuit2016: Nuit2016,
   nuit2015: Nuit2015,
+  nuit2014: Nuit2014,
+  nuit2013: Nuit2013,
+  nuit2012: Nuit2012,
+  nuit2011: Nuit2011,
+  nuit2010: Nuit2010,
+  nuit2009: Nuit2009,
+  nuit2008: Nuit2008,
+  nuit2007: Nuit2007,
 };
 
 interface ThemeNames {
@@ -61,12 +82,19 @@ const themeNames: ThemeNames = {
   nuit2023: "Nuit de l'info 2023",
   nuit2022: "Nuit de l'info 2022",
   nuit2021: "Nuit de l'info 2021",
-  nuit2020: "Nuit de l'info 2020",
   nuit2019: "Nuit de l'info 2019",
   nuit2018: "Nuit de l'info 2018",
   nuit2017: "Nuit de l'info 2017",
   nuit2016: "Nuit de l'info 2016",
   nuit2015: "Nuit de l'info 2015",
+  nuit2014: "Nuit de l'info 2014",
+  nuit2013: "Nuit de l'info 2013",
+  nuit2012: "Nuit de l'info 2012",
+  nuit2011: "Nuit de l'info 2011",
+  nuit2010: "Nuit de l'info 2010",
+  nuit2009: "Nuit de l'info 2009",
+  nuit2008: "Nuit de l'info 2008",
+  nuit2007: "Nuit de l'info 2007",
 };
 
 export default function Dashboard() {
