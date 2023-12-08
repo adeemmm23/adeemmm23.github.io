@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button.tsx";
 import { Loader2, Github } from "lucide-react";
 import { useTheme } from "@/components/theme-provider";
 import validator from "validator";
+import { useNavigate } from "react-router-dom";
 
 type ButtonVariant =
   | "default"
@@ -46,13 +47,16 @@ const SignInForm = ({ className, ...props }: SignInProps) => {
       setErrorPassword("");
     }
   };
+  const navigate = useNavigate();
 
   async function onSubmit(event: React.SyntheticEvent) {
     event.preventDefault();
     setIsLoading(true);
 
+    location.href = "/dashboard";
     setTimeout(() => {
       setIsLoading(false);
+      navigate("/dashboard");
     }, 3000);
   }
 
